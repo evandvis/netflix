@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-.main{
+
+.main {
     background-image: url("assets/images/netflix\ bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
@@ -10,7 +11,8 @@
     height: 80vh;
     position: relative;
 }
-.box{
+
+.box {
     height: 80vh;
     width: 100%;
     opacity: 0.5;
@@ -18,9 +20,10 @@
     position: absolute;
     top: 0%;
 }
-nav{
+
+nav {
     max-width: 80vw;
-    margin:auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,27 +31,33 @@ nav{
     position: relative;
     z-index: 3;
 }
-nav img{
+
+nav img {
     height: 60px;
-    width: 60;
+    width: 60px;
     position: relative;
     z-index: 2;
 }
-.buttons{
+
+.buttons {
     cursor: pointer;
 }
-.text{
-  font-family: "Inter", serif;
-  font-style: normal;
-  color: white;
+
+.text {
+    font-family: "Inter", serif;
+    font-style: normal;
+    color: white;
 }
-.bold{
+
+.bold {
     font-weight: 600;
 }
-.ultra-bold{
+
+.ultra-bold {
     font-weight: 900;
 }
-.content-1{
+
+.content-1 {
 
     display: flex;
     flex-wrap: wrap;
@@ -61,12 +70,15 @@ nav img{
     position: relative;
     z-index: 1;
 }
-.info{
+
+.info {
     font-size: 40px;
 }
-.pricing{
+
+.pricing {
     font-size: 15px;
 }
-.email-creation{
+
+.email-creation {
     font-size: 10px;
 }
