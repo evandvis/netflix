@@ -18,6 +18,7 @@ body {
 }
 
 .buttons {
+    cursor: pointer;
     border-radius: 4px;
     padding: 5px 5px;
     font-size: 15px;
@@ -186,6 +187,7 @@ nav .buttons {
     border: solid rgb(91, 91, 91);
     border-radius: 4px;
     background-color: #161615;
+    opacity: 0.6;
 }
 
 ::placeholder {
@@ -237,10 +239,24 @@ nav .buttons {
 .sub-content {
     background-color: black;
     display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* align-items: flex-start; */
+    text-align: left;
+    margin: auto;
+    width: 80vw;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    /* border: solid white; */
+}
+
+.sub-content-footer {
+    background-color: black;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: left;
+    /* align-items: flex-start; */
     text-align: left;
     margin: auto;
     width: 80vw;
@@ -266,6 +282,7 @@ nav .buttons {
 .selection-buttons button {
     height: 40px;
     width: 100px;
+    /* border: solid white; */
 }
 
 .dropdown-svg {
@@ -280,7 +297,15 @@ nav .buttons {
     cursor: pointer;
 }
 
+.top-10{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .tiles {
+    scroll-behavior: smooth;
+    overflow-x: scroll;
     display: flex;
     /* border: solid white; */
     height: 300px;
@@ -289,9 +314,32 @@ nav .buttons {
     gap: 40px;
 }
 
+.slider-button {
+    background-color: #1A1A1A;
+    width: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+.slider-button:hover{
+    background-color: #454444;
+}
+
+.slider-svg {
+    height: 120px;
+    width: 20px;
+}
+
 .movie-tile {
+    /* border: solid white; */
     height: 260px;
     border-radius: 10px;
+}
+
+.movie-tile:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+    /* transition: 0.1s ease; */
 }
 
 .content-3 {
@@ -302,16 +350,17 @@ nav .buttons {
 
 .content-4 {
     height: 600px;
+    margin-top: 100px;
     /* border: solid white; */
 }
 
-.faqs{
+.faqs {
     display: flex;
     flex-direction: column;
     /* border: solid white; */
 }
 
-.question-tile{
+.question-tile {
     font-size: x-large;
     display: flex;
     flex-direction: row;
@@ -326,31 +375,37 @@ nav .buttons {
     cursor: pointer;
 }
 
-.question-tile:hover{
+.question-tile:hover {
     background-color: #454444;
+    transition: 0.5s ease-out;
 }
 
-.plus-symbol{
+.plus-symbol {
     justify-content: right;
     height: 35px;
     /* border: solid white; */
 }
 
-.more-tile{
+.more-tile {
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom right, #1a2145, #200e17);
     /* border: solid white; */
-    height: 200px;
+    height: 230px;
+    width: 300px;
     padding: 20px 20px;
     border-radius: 20px;
 }
 
-.glowing-svgs{
+.written-content {
+    margin-top: 10px;
+}
+
+.glowing-svgs {
     height: 80px;
 }
 
-.all-more-tiles{
+.all-more-tiles {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -359,21 +414,21 @@ nav .buttons {
 
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     color: #a2a2a2;
     /* border: solid white; */
 }
 
-.query-columns{
+.query-columns {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
     /* border: solid white; */
 }
 
-.footer-column{
+.footer-column {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -383,23 +438,23 @@ nav .buttons {
     /* border: solid white; */
 }
 
-a{
+a {
     color: #a2a2a2;
 }
 
-.lang-button2{
+.lang-button2 {
     display: flex;
     justify-content: space-evenly;
     height: 30px;
     width: 120px;
 }
 
-.penultimate{
+.penultimate {
     /* border: solid white; */
     width: 80vw;
 }
 
-.footnote{
+.footnote {
     margin-top: 30px;
     margin-bottom: 70px;
     /* padding: 5px 50px; */
