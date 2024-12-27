@@ -3,19 +3,45 @@
     margin: 0;
 }
 
+body {
+    background-color: black;
+}
+
+#left-shadow {
+    box-shadow: 40px 0px 60px inset;
+}
+
+#right-shadow {
+    /* height: 500px; */
+    width: 50px;
+    box-shadow: -40px 0px 60px inset;
+}
+
+.buttons {
+    border-radius: 4px;
+    padding: 5px 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .main {
     background-image: url("assets/images/netflix\ bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(2400px, 100vw);
-    height: 80vh;
+    height: 95vh;
     position: relative;
+    box-shadow: 0px 40px 60px black inset;
+    /* border: solid white; */
+
 }
 
 .box {
-    height: 80vh;
+    height: 95vh;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.7;
     background-color: black;
     position: absolute;
     top: 0%;
@@ -27,58 +53,279 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 70px;
     position: relative;
     z-index: 3;
+    /* border: solid white; */
+    /* margin-top: 200px; */
+    padding-top: 10px;
+    /* margin-top: 20px; */
 }
 
-nav img {
-    height: 60px;
-    width: 60px;
-    position: relative;
-    z-index: 2;
+#logo img {
+    height: 150px;
+    width: 150px;
+    /* position: relative;
+    z-index: 2; */
 }
 
-.buttons {
+#nav-buttons img {
+    height: 20px;
+    width: 20px;
+    /* position: relative;
+    z-index: 10; */
+}
+
+#nav-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: solid white; */
+}
+
+nav .buttons {
     cursor: pointer;
+    height: 30px;
+}
+
+#nav-buttons .lang-button {
+    width: 120px;
+}
+
+#nav-buttons .signin-button {
+    width: 80px;
 }
 
 .text {
     font-family: "Inter", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
     font-style: normal;
     color: white;
 }
 
 .bold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
     font-weight: 600;
+    font-style: normal;
 }
 
 .ultra-bold {
+    font-family: "Inter", serif;
+    font-optical-sizing: auto;
     font-weight: 900;
+    font-style: normal;
 }
 
 .content-1 {
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    text-align: center;
+    width: 40vw;
     height: 500px;
     margin: auto;
+    margin-top: 70px;
     position: relative;
     z-index: 1;
+    /* border: solid white; */
+    gap: 20px;
 }
 
-.info {
-    font-size: 40px;
+#info {
+    font-size: 55px;
 }
 
-.pricing {
-    font-size: 15px;
+#pricing {
+    font-size: 20px;
 }
 
-.email-creation {
-    font-size: 10px;
+#email-creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.details {
+    display: flex;
+    /* border: solid white; */
+    width: 600px;
+    height: 60px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.details .buttons img {
+    height: 15px;
+    width: 15px;
+}
+
+#email-field {
+    width: 350px;
+    /* height: ; */
+    padding: 12px 20px;
+    /* border: solid white; */
+}
+
+#mail {
+    padding: 15px;
+    height: 27px;
+    width: 350px;
+    margin: 8px 0;
+    /* box-sizing: border-box; */
+    border-width: 10px;
+    border: solid rgb(91, 91, 91);
+    border-radius: 4px;
+    background-color: #161615;
+}
+
+::placeholder {
+    font-family: "Inter", serif;
+    font-style: normal;
+    font-size: medium;
+    color: #b8b8b8;
+    /* background-color: #0f0f0f; */
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+#lang {
+    width: 15px;
+    height: 15px;
+}
+
+.black-button {
+    background-color: #161615;
+    border: solid gray;
+    border-width: 0.1px;
+}
+
+.red-button {
+    background-color: #e50815;
+    border: none;
+}
+
+.seperator {
+    position: relative;
+    z-index: 4;
+    margin-top: 150px;
+}
+
+.seperator-gradient-blue {
+    background-image: radial-gradient(at top, #141d47, black);
+    /* position: absolute;
+    z-index: 2; */
+    height: 50px;
+}
+
+.seperator-gradient-red {
+    background-image: radial-gradient(red, rgb(255, 55, 115));
+    /* position: absolute;
+    z-index: 1; */
+    height: 4px;
+}
+
+.sub-content {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: left;
+    text-align: left;
+    margin: auto;
+    width: 80vw;
+    margin-top: 70px;
+    position: relative;
+    z-index: 1;
+    border: solid white;
+}
+
+.content-2 {
+    /* height: 450px; */
+    /* border: solid white; */
+    gap: 20px;
+}
+
+.selection-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.selection-buttons button {
+    height: 40px;
+    width: 100px;
+}
+
+.dropdown-svg {
+    height: 10px;
+    width: 10px;
+}
+
+#get-started {
+    width: 220px;
+    height: 60px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.tiles {
+    display: flex;
+    /* border: solid white; */
+    height: 300px;
+    width: 80vw;
+    align-items: center;
+    gap: 40px;
+}
+
+.movie-tile {
+    height: 260px;
+    border-radius: 10px;
+}
+
+.content-3 {
+    height: 400px;
+    gap: 20px;
+}
+
+.content-4 {
+    height: 700px;
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    border: solid white;
+}
+
+.question-tile{
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    height: 80px;
+    background-color: #2d2d2d;
+    padding: 0px 25px;
+    /* border: solid red; */
+    margin-top: 10px;
+}
+
+.plus-symbol{
+    justify-content: right;
+    height: 30px;
+    border: solid white;
 }

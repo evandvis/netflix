@@ -7,42 +7,123 @@
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
     </style>
 </head>
 
 <body>
     <div class="main">
         <nav>
-            <span><img src="assets/svgs/netflix-logo.svg" alt="netflix-logo"></span>
-            <span>
-                <button class="buttons">English</button>
-                <button class="buttons">Sign in</button>
+            <span id="logo"><img src="assets/svgs/netflix-logo.svg" alt="netflix-logo"></span>
+            <span id="nav-buttons">
+                <button class="black-button buttons lang-button text"><img id="lang"
+                        src="assets/svgs/languages-svgrepo-com.svg" alt="languages">English <img class="dropdown-svg"
+                        src="assets/svgs/dropdown-svgrepo-com.svg" alt="dropdown svg"></button>
+                <button class="red-button buttons signin-button bold text">Sign in</button>
             </span>
         </nav>
-        <div class="box"></div>
+        <div id="left-shadow"></div>
+        <div id="right-shadow"></div>
+        <div id="black-filter" class="box"></div>
         <div class="content-1">
-            <div class="text ultra-bold info">
+            <div id="info" class="ultra-bold text">
                 <p>
                     Unlimited movies, TV shows and more
                 </p>
             </div>
-            <div class="text bold pricing">
+            <div id="pricing" class="text bold">
                 <p>
                     Starts at ₹149. Cancel at any time.
                 </p>
             </div>
-            <div class="text email-creation">
+            <div id="email-creation" class="text">
                 <p>
                     Ready to watch? Enter your email to create or restart your membership.
                 </p>
+                <span class="details">
+                    <form id="email-field" action="" method="get">
+                        <input class="text" type="email" placeholder="Email address" name="email" id="mail">
+                    </form>
+                    <button id="get-started" class="buttons red-button bold text">Get Started &nbsp;<img
+                            src="assets/svgs/right-arrow-backup-2-svgrepo-com.svg" alt=""> </button>
+                </span>
             </div>
-            <div class="details">
-                <form action="" method="get">
+
+        </div>
+        <div class="seperator" id="seperator-gradient">
+            <div class="seperator-gradient-red"></div>
+            <div class="seperator-gradient-blue"></div>
+        </div>
+        <div class="sub-content content-2">
+            <div class="bold text">
+                <h2>
+                    Trending Now
+                </h2>
+            </div>
+            <div class="selection-buttons">
+                <button id="India" class="buttons black-button text">India <img class="dropdown-svg"
+                        src="assets/svgs/dropdown-svgrepo-com.svg" alt=""> </button>
+                <button id="Movies" class="buttons black-button text">Movies <img class="dropdown-svg"
+                        src="assets/svgs/dropdown-svgrepo-com.svg" alt=""> </button>
+            </div>
+            <div id="top-10" class="tiles">
+                <span id="item1"><img class="movie-tile" src="assets/images/1.webp" alt=""></span>
+                <span id="item2"><img class="movie-tile" src="assets/images/2.webp" alt=""></span>
+                <span id="item3"><img class="movie-tile" src="assets/images/3.webp" alt=""></span>
+                <span id="item4"><img class="movie-tile" src="assets/images/4.webp" alt=""></span>
+                <span id="item5"><img class="movie-tile" src="assets/images/5.webp" alt=""></span>
+                <span id="item6"><img class="movie-tile" src="assets/images/6.webp" alt=""></span>
+                <span id="item7"><img class="movie-tile" src="assets/images/7.webp" alt=""></span>
+                <span id="item8""><img class=" movie-tile" src="assets/images/8.webp" alt=""></span>
+                <span id="item9"><img class="movie-tile" src="assets/images/9.webp" alt=""></span>
+                <span id="item10"><img class="movie-tile" src="assets/images/10.webp" alt=""></span>
+            </div>
+        </div>
+        <div class="sub-content content-3">
+            <h2 class="bold text">More reasons to join</h2>
+        </div>
+        <div class="sub-content content-4">
+            <h2 class="bold text">Frequently Asked Questions</h2>
+            <div class="faqs">
+                <span>
+                    <span class="question-tile">
+                        <p class="text question">What is Netflix?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="question-tile">
+                        <p class="text question">How much does Netflix cost?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="question-tile">
+                        <p class="text question">Where can I watch?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="question-tile">
+                        <p class="text question">How do I cancel?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="question-tile">
+                        <p class="text question">What can I watch on Netflix?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                    <span class="question-tile">
+                        <p class="text question">Is Netflix good for kids?</p>
+                        <img class="plus-symbol" src="assets/svgs/plus-svgrepo-com.svg" alt="">
+                    </span>
+                </span>
+            </div>
+        </div>
+        <div id="email-creation" class="text">
+            <p>
+                Ready to watch? Enter your email to create or restart your membership.
+            </p>
+            <span class="details">
+                <form id="email-field" action="" method="get">
                     <input class="text" type="email" placeholder="Email address" name="email" id="mail">
-                    <input class="text" type="button" value="Get Started">
                 </form>
-            </div>
+                <button id="get-started" class="buttons red-button bold text">Get Started &nbsp;<img
+                        src="assets/svgs/right-arrow-backup-2-svgrepo-com.svg" alt=""> </button>
+            </span>
         </div>
     </div>
 
