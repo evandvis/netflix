@@ -224,8 +224,6 @@ nav .buttons {
 
 .seperator-gradient-blue {
     background-image: radial-gradient(at top, #141d47, black);
-    /* position: absolute;
-    z-index: 2; */
     height: 50px;
 }
 
@@ -249,7 +247,7 @@ nav .buttons {
     margin-top: 70px;
     position: relative;
     z-index: 1;
-    border: solid white;
+    /* border: solid white; */
 }
 
 .content-2 {
@@ -297,18 +295,20 @@ nav .buttons {
 }
 
 .content-3 {
-    height: 400px;
+    /* border: solid white; */
+    height: 300px;
     gap: 20px;
 }
 
 .content-4 {
-    height: 700px;
+    height: 600px;
+    /* border: solid white; */
 }
 
 .faqs{
     display: flex;
     flex-direction: column;
-    border: solid white;
+    /* border: solid white; */
 }
 
 .question-tile{
@@ -316,16 +316,93 @@ nav .buttons {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     text-align: left;
     height: 80px;
     background-color: #2d2d2d;
     padding: 0px 25px;
     /* border: solid red; */
     margin-top: 10px;
+    cursor: pointer;
+}
+
+.question-tile:hover{
+    background-color: #454444;
 }
 
 .plus-symbol{
     justify-content: right;
+    height: 35px;
+    /* border: solid white; */
+}
+
+.more-tile{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #1a2145, #200e17);
+    /* border: solid white; */
+    height: 200px;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+.glowing-svgs{
+    height: 80px;
+}
+
+.all-more-tiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    /* border: solid white; */
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    color: #a2a2a2;
+    /* border: solid white; */
+}
+
+.query-columns{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* border: solid white; */
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    height: 150px;
+    width: 20vw;
+    /* border: solid white; */
+}
+
+a{
+    color: #a2a2a2;
+}
+
+.lang-button2{
+    display: flex;
+    justify-content: space-evenly;
     height: 30px;
-    border: solid white;
+    width: 120px;
+}
+
+.penultimate{
+    /* border: solid white; */
+    width: 80vw;
+}
+
+.footnote{
+    margin-top: 30px;
+    margin-bottom: 70px;
+    /* padding: 5px 50px; */
+    font-size: smaller;
+    color: #a2a2a2;
 }
