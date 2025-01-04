@@ -42,7 +42,10 @@ This project is a visually accurate replica of Netflix's homepage, built entirel
 
 ## Screenshots
 
-*Add screenshots of your project here.*
+![Screenshot1](screenshots/Screenshot%202025-01-04%20at%204.10.09 PM.png)
+![Screenshot 2](screenshots/Screenshot%202025-01-04%20at%204.10.22 PM.png)
+![Screenshot 3](screenshots/Screenshot%202025-01-04%20at%204.10.35 PM.png)
+![Screenshot 4](screenshots/Screenshot%202025-01-04%20at%204.10.47 PM.png)
 
 ## License
 
